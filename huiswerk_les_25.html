@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Huiswerk les 25</title>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#knop").click(function() {
+                    var naam = $("#Tekstveld1").val();
+                    var leeftijd = $("#Tekstveld2").val();
+                    var hobby = $("#Tekstveld3").val();
+                    window.alert(
+                    "Ik ben " + naam +
+                    " en ik ben " + leeftijd + " jaar" +
+                    " en mijn favoriete hobby is " + hobby);
+                }); 
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            Wat is uw naam? 
+            <input type="text" id="Tekstveld1"><br><br>
+            Wat is uw leeftijd?
+            <input type="text" id="Tekstveld2"><br><br>
+            Wat is uw favoriete hobby?
+            <input type="text" id="Tekstveld3"><br><br>
+            <input id="knop" name="knop" type="button" value="klik op mij">
+        </form>
+    </body>
+</html>
